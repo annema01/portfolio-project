@@ -8,4 +8,6 @@
   --gradient: linear-gradient(#023859, #56bfb5);
   --font-darkbg: #eaeaea;
   --shadow: 2px 2px 9px 4px rgba(2, 56, 89, 0.2);
+  --primary-font: "Merriweather", serif;
+  --secondary-font: "Roboto", sans-serif;
 }

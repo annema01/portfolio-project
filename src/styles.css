@@ -39,19 +39,33 @@ body {
   font-family: var(--primary-font);
   color: var(--font-darkbg);
   line-height: 1.5;
+}
+
+.homepage-content {
+  background: var(--gradient);
+  background-repeat: no-repeat;
+  padding-top: 400px;
   height: 100vh;
   height: 100svh;
 }
 
-.homepage {
-  background: var(--gradient);
-  background-repeat: no-repeat;
-  padding-top: 450px;
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
 }
 
-h1,
-h2 {
-  text-transform: uppercase;
+h3,
+h4 {
+  font-style: italic;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 24px;
 }
 
 .homepage h1 {
@@ -76,10 +90,55 @@ ul {
   color: var(--tertiary-color);
   text-decoration: none;
   font-size: 50px;
-  padding: 10px 20px;
 }
 
 .homepage a:hover {
-  background-color: var(--primary-color);
-  border-radius: 4px;
+  text-decoration: underline;
+
+  text-decoration-thickness: 10px;
+}
+.chevron {
+  color: var(--tertiary-color);
+  text-align: center;
+  position: fixed;
+  bottom: 40px;
+  font-size: 40px;
+}
+
+.reels {
+  background-color: var(--tertiary-color);
+  padding-top: 150px;
+}
+
+.homepage h3 {
+  color: var(--primary-color);
+}
+
+.video-reel {
+  margin-top: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+footer {
+  height: 300px;
+}
+
+.homepage footer {
+  background-color: var(--tertiary-color);
+}
+
+@media (max-width: 400px) {
+  .homepage-content {
+    padding-top: 200px;
+  }
+  .homepage h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .margin-left {
+    display: none;
+  }
 }

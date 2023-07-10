@@ -86,7 +86,7 @@ ul {
   text-align: right;
 }
 
-.homepage a {
+.links a {
   color: var(--tertiary-color);
   text-decoration: none;
   font-size: 50px;
@@ -97,11 +97,14 @@ ul {
 
   text-decoration-thickness: 10px;
 }
+
 .chevron {
-  color: var(--tertiary-color);
-  text-align: center;
   position: fixed;
   bottom: 40px;
+  text-align: center;
+}
+.chevron a {
+  color: var(--tertiary-color);
   font-size: 40px;
 }
 
@@ -129,16 +132,74 @@ footer {
 }
 
 @media (max-width: 400px) {
+  /* .signature {
+    margin-left: 30px;
+    justify-content: left;
+  }
+
+  .links {
+    justify-content: right;
+    margin-right: 30px;
+    margin-top: 50px;
+  }*/
   .homepage-content {
     padding-top: 200px;
   }
   .homepage h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
-  h2 {
-    font-size: 24px;
+  .homepage h2 {
+    font-size: 20px;
   }
-  .margin-left {
+  /* .margin-left {
     display: none;
+  }*/
+  .links a {
+    font-size: 30px;
+    line-height: 2;
+  }
+  .chevron a {
+    font-size: 60px;
+  }
+  .reels {
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media (min-width: 401px) and(max-width: 900px) {
+  /*  .signature {
+    margin-left: 30px;
+    justify-content: left;
+  }
+
+  .links {
+    justify-content: right;
+    margin-right: 30px;
+    margin-top: 50px;
+  }*/
+  .homepage-content {
+    padding-top: 400px;
+  }
+  .homepage h1 {
+    font-size: 80px;
+  }
+  .homepage h2 {
+    font-size: 30px;
+  }
+  /*.margin-left {
+    display: none;
+  }*/
+  .links a {
+    font-size: 40px;
+    line-height: 1.5;
+  }
+  .chevron a {
+    font-size: 60px;
+  }
+  .reels {
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }

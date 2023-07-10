@@ -1,0 +1,11 @@
+/*  font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;  */
+
+:root {
+  --primary-color: #023859;
+  --secondary-color: #56bfb5;
+  --tertiary-color: #bf924c;
+  --gradient: linear-gradient(#023859, #56bfb5);
+  --font-darkbg: #eaeaea;
+  --shadow: 2px 2px 9px 4px rgba(2, 56, 89, 0.2);
+}

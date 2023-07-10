@@ -11,3 +11,65 @@
   --primary-font: "Merriweather", serif;
   --secondary-font: "Roboto", sans-serif;
 }
+
+.row,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--font-darkbg);
+  line-height: 1.5;
+}
+
+.homepage {
+  background: var(--gradient);
+  background-repeat: no-repeat;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+.homepage h1 {
+  font-size: 96px;
+}
+
+.homepage h2 {
+  font-size: 24px;
+  font-style: italic;
+  font-family: var(--secondary-font);
+  color: var(--tertiary-color);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.homepage a {
+  color: var(--tertiary-color);
+  text-decoration: none;
+  font-size: 48px;
+  padding-right: 45px;
+}
+
+.homepage-content {
+  margin: 53vh 0 18vh;
+}

@@ -129,13 +129,14 @@ hr {
 .navigation {
   margin: 80px 0 100px;
 }
+.navigation h1 a {
+  font-size: 48px;
+  text-decoration: none;
+  color: var(--font-darkbg);
+}
 
 footer {
   height: 300px;
-}
-
-.homepage footer {
-  background-color: var(--tertiary-color);
 }
 
 /*------------General code end---------------------*/
@@ -178,11 +179,6 @@ footer {
 /*------------About page specific code-----------------------*/
 .about-page {
   background: var(--primary-color);
-}
-.about-page h1 a {
-  font-size: 48px;
-  text-decoration: none;
-  color: var(--font-darkbg);
 }
 
 .about-page p a {
@@ -248,7 +244,6 @@ footer {
 
 .reels {
   background-color: var(--tertiary-color);
-  padding-top: 150px;
 }
 
 .reels h4 {

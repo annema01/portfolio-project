@@ -1,6 +1,28 @@
 /*  font-family: 'Merriweather', serif;
     font-family: 'Roboto', sans-serif;  */
 
+/*bootstrap override-----------------------*/
+
+.row,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  padding: 0;
+  margin: 0;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+/*bootstrap override-----------------------*/
+
 :root {
   --primary-color: #023859;
   --secondary-color: #56bfb5;
@@ -18,23 +40,6 @@
   --secondary-font: "Roboto", sans-serif;
 }
 
-.row,
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 {
-  padding: 0;
-  margin: 0;
-}
-
 body {
   font-family: var(--primary-font);
   color: var(--font-darkbg);
@@ -48,7 +53,7 @@ body {
 }
 
 .homepage {
-  background: var(--gradient);
+  background: var(--primary-color);
   background-repeat: no-repeat;
   height: 120vh;
 }
@@ -131,11 +136,13 @@ h4 {
 
 .about-navigation {
   text-align: right;
+  margin-top: 250px;
 }
 
 .about-page hr {
   border: 1px solid var(--font-darkbg);
   opacity: 1;
+  margin: 22px 0;
 }
 
 .homepage a:hover {
@@ -144,18 +151,21 @@ h4 {
 }
 
 .chevron {
-  position: fixed;
-  bottom: 40px;
+  position: relative;
   text-align: center;
 }
 .chevron a {
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
   font-size: 40px;
 }
 
 .reels {
   background-color: var(--tertiary-color);
   padding-top: 150px;
+}
+
+.reels h4 {
+  color: var(--primary-color);
 }
 
 .homepage h3 {
@@ -173,9 +183,59 @@ h4 {
 
 .about-description,
 .about-navigation,
-.skills {
-  height: 100vh;
-  height: 100svh;
+.skills,
+.education,
+.experience {
+  min-height: 100vh;
+  min-height: 100svh;
+  padding-top: 75px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+.experience {
+  color: var(--primary-color);
+  background: var(--tertiary-color);
+}
+.experience hr {
+  border: 1px solid var(--primary-color);
+}
+
+.sub-section {
+  padding-top: 100px;
+}
+
+.date,
+.title {
+  font-size: 24px;
+  white-space: nowrap;
+  line-height: 1.5;
+}
+
+.title {
+  text-align: right;
+}
+.location {
+  font-size: 16px;
+}
+
+.section-title {
+  font-size: 24px;
+}
+
+.scroll-up {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  box-shadow: var(--shadow);
+  border-radius: 4px 0px 0px;
+}
+.scroll-up i {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 26px;
 }
 
 footer {
@@ -211,8 +271,7 @@ footer {
     line-height: 1.75;
   }
   .chevron {
-    bottom: 70px;
-    padding-right: 30px;
+    bottom: 10px;
   }
   .chevron a {
     font-size: 70px;
@@ -220,6 +279,57 @@ footer {
   .reels {
     padding-top: 50px;
     padding-right: 8px;
+  }
+
+  /*----------ABOUT PAGE--------------*/
+  .about-page p {
+    font-size: 28px;
+  }
+
+  .about-content {
+    margin: 0 30px;
+  }
+  .date {
+    text-align: right;
+    font-size: 18px;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .location {
+    font-size: 16px;
+  }
+  .date,
+  .title,
+  .location {
+    line-height: 2;
+  }
+
+  .about-page h4,
+  .title,
+  .location,
+  .date {
+    text-align: center;
+    white-space: wrap;
+    padding: 0 10px;
+  }
+
+  .about-page h4 {
+    margin-bottom: 40px;
+    font-size: 36px;
+  }
+
+  .skills ul {
+    text-align: center;
+    padding-left: 0;
+    color: var(--tertiary-color);
+  }
+  .section-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .skills hr {
+    display: none;
   }
 }
 @media (min-width: 577px) and (max-width: 992px) {
@@ -262,6 +372,56 @@ footer {
     padding-left: 50px;
   }
   .left-side {
+    display: none;
+  }
+  /*----------ABOUT PAGE--------------*/
+  .about-page p {
+    font-size: 28px;
+  }
+
+  .about-content {
+    margin: 0 30px;
+  }
+  .date {
+    text-align: right;
+    font-size: 18px;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .location {
+    font-size: 16px;
+  }
+  .date,
+  .title,
+  .location {
+    line-height: 2;
+  }
+
+  .about-page h4,
+  .title,
+  .location,
+  .date {
+    text-align: center;
+    white-space: wrap;
+    padding: 0 10px;
+  }
+
+  .about-page h4 {
+    margin-bottom: 40px;
+    font-size: 36px;
+  }
+
+  .skills ul {
+    text-align: center;
+    padding-left: 0;
+    color: var(--tertiary-color);
+  }
+  .section-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .skills hr {
     display: none;
   }
 }

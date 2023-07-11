@@ -46,6 +46,29 @@ body {
   color: var(--font-darkbg);
   line-height: 1.5;
 }
+.homepage .wrapper {
+  border: 80px solid var(--tertiary-color);
+  box-sizing: border-box;
+  position: absolute;
+  z-index: -2;
+  height: 100vh;
+  width: 100%;
+}
+.about-page .wrapper {
+  border: 80px solid var(--tertiary-color);
+  box-sizing: border-box;
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+}
+.reels-page .wrapper {
+  border: 80px solid var(--primary-color);
+  box-sizing: border-box;
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+}
+
 h1,
 h2,
 h3 {
@@ -115,10 +138,8 @@ hr {
   left: 0;
   top: 350px;
   padding: 20px 40px;
-  background-color: var(--tertiary-color);
   box-shadow: var(--shadow);
   border-radius: 0 4px 4px 0;
-  color: var(--primary-color);
   font-weight: 500;
   font-size: 32px;
   text-transform: uppercase;
@@ -127,7 +148,7 @@ hr {
   line-height: 1;
 }
 .navigation {
-  margin: 80px 0 100px;
+  margin: 3 0px 0 150px 40px;
 }
 .navigation h1 a {
   font-size: 48px;
@@ -143,29 +164,43 @@ footer {
 /*------------Homepage specific code-------------------------*/
 .homepage-content {
   padding-top: 400px;
-  height: 100vh;
+  height: 100dvh;
   height: 100svh;
 }
 
 .homepage {
   background: var(--primary-color);
   background-repeat: no-repeat;
-  height: 120vh;
 }
 .homepage h1 {
   font-size: 96px;
 }
-
+.signature {
+  background: var(--primary-color);
+  max-height: 130px;
+  white-space: nowrap;
+}
 .homepage h2 {
   font-size: 33px;
   font-style: italic;
   font-weight: 300;
   font-family: var(--secondary-font);
   color: var(--secondary-color);
+  background: var(--primary-color);
 }
 
 .homepage .inpage-navigation {
   text-transform: uppercase;
+}
+
+.homepage a {
+  background: var(--primary-color);
+  white-space: nowrap;
+  text-align: right;
+}
+
+.homepage li {
+  text-align: right;
 }
 .homepage a:hover {
   text-decoration: underline;
@@ -240,13 +275,18 @@ footer {
   padding-bottom: 100px;
   margin-bottom: 100px;
 }
+
+.about-page .hire-me {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
 /*------------About page specific code----End----------------*/
 
-.reels {
+.reels-page {
   background-color: var(--tertiary-color);
 }
 
-.reels h4 {
+.reels-page h4 {
   color: var(--primary-color);
 }
 
@@ -255,10 +295,15 @@ footer {
   position: relative;
   z-index: 2;
 }
-
+/*------------Reels page specific code-----------------------*/
+.reels-page .hire-me {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+/*------------Reels page specific code--END------------------*/
 @media (max-width: 576px) {
   .signature {
-    margin-left: 30px;
+    margin: 0px 30px;
   }
   .inpage-navigation {
     margin-right: 30px;

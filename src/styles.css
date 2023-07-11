@@ -238,6 +238,23 @@ h4 {
   font-size: 26px;
 }
 
+.hire-me {
+  position: fixed;
+  left: 0;
+  top: 200px;
+  padding: 20px 40px;
+  background-color: var(--tertiary-color);
+  box-shadow: var(--shadow);
+  border-radius: 0 4px 4px 0;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: italic;
+  line-height: 1;
+}
+
 footer {
   height: 300px;
 }

@@ -42,11 +42,19 @@ body {
 }
 
 .homepage-content {
-  background: var(--gradient);
-  background-repeat: no-repeat;
   padding-top: 400px;
   height: 100vh;
   height: 100svh;
+}
+
+.homepage {
+  background: var(--gradient);
+  background-repeat: no-repeat;
+  height: 120vh;
+}
+
+.about-page {
+  background: var(--primary-color);
 }
 
 h1,
@@ -72,6 +80,25 @@ h4 {
   font-size: 96px;
 }
 
+.about-page h1 a {
+  font-size: 48px;
+  text-decoration: none;
+  color: var(--font-darkbg);
+}
+
+.about-page p {
+  font-size: 48px;
+  font-family: "Roboto", sans-serif;
+}
+
+.about-page p a {
+  color: var(--tertiary-color);
+}
+.about-page p a:hover {
+  font-style: italic;
+  letter-spacing: 0.03rem;
+}
+
 .homepage h2 {
   font-size: 33px;
   font-style: italic;
@@ -80,10 +107,15 @@ h4 {
   color: var(--tertiary-color);
 }
 
-ul {
+.homepage ul {
   list-style: none;
   text-transform: uppercase;
   text-align: right;
+}
+
+.about-page ul {
+  list-style: none;
+  font-size: 24px;
 }
 
 .links a {
@@ -91,10 +123,23 @@ ul {
   text-decoration: none;
   font-size: 50px;
 }
+.about-navigation a {
+  color: var(--tertiary-color);
+  text-decoration: none;
+  font-size: 48px;
+}
+
+.about-navigation {
+  text-align: right;
+}
+
+.about-page hr {
+  border: 1px solid var(--font-darkbg);
+  opacity: 1;
+}
 
 .homepage a:hover {
   text-decoration: underline;
-
   text-decoration-thickness: 10px;
 }
 
@@ -116,11 +161,21 @@ ul {
 .homepage h3 {
   color: var(--primary-color);
 }
+.about-page h3 {
+  color: var(--tertiary-color);
+}
 
 .video-reel {
   margin-top: 40px;
   position: relative;
   z-index: 2;
+}
+
+.about-description,
+.about-navigation,
+.skills {
+  height: 100vh;
+  height: 100svh;
 }
 
 footer {

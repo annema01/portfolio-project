@@ -55,6 +55,7 @@ body {
 }
 /*class to dertermine the right ish alignment*/
 .content {
+  padding: 160px 120px 0 360px;
 }
 
 .homepage .wrapper {
@@ -172,11 +173,6 @@ footer {
 
 /*------------General code end---------------------*/
 /*------------Homepage specific code-------------------------*/
-.homepage-content {
-  padding-top: 400px;
-  height: 100dvh;
-  height: 100svh;
-}
 
 .homepage {
   background: var(--primary-color);
@@ -192,11 +188,6 @@ footer {
 
 .signature .homepage {
   background: var(--primary-color);
-}
-
-h1,
-.contact-page {
-  color: var(--primary-color);
 }
 
 .homepage h2 {
@@ -381,9 +372,7 @@ label {
     margin-right: 30px;
     padding-right: 35px;
   }
-  .homepage-content {
-    padding-top: 200px;
-  }
+
   .homepage h1 {
     font-size: 40px;
   }
@@ -471,9 +460,7 @@ label {
   .inpage-navigation {
     padding-right: 60px;
   }
-  .homepage-content {
-    padding-top: 200px;
-  }
+
   .homepage h1 {
     font-size: 70px;
     line-height: 1;

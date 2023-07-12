@@ -55,7 +55,7 @@ body {
 }
 /*class to dertermine the right ish alignment*/
 .content {
-  padding: 160px 160px 0 500px;
+  padding: 2% 1% 0 25%;
 }
 
 .homepage .wrapper {
@@ -98,14 +98,13 @@ h4 {
   font-size: 24px;
 }
 p {
-  font-size: 48px;
+  font-size: 28px;
   font-family: "Roboto", sans-serif;
 }
 
 hr {
   border: 1px solid var(--font-darkbg);
   opacity: 1;
-  margin: 22px 0;
 }
 .inpage-navigation {
   text-align: right;
@@ -122,6 +121,7 @@ hr {
 .chevron {
   position: relative;
   text-align: center;
+  padding-right: 10%;
 }
 .chevron a {
   color: var(--secondary-color);
@@ -159,11 +159,16 @@ hr {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
+
+.table-2nd-row {
+  justify-content: end;
+}
+
 .navigation {
-  margin: 3 0px 0 150px 40px;
+  margin: 30px 0 150px 40px;
 }
 .navigation h1 a {
-  font-size: 48px;
+  font-size: 38px;
   text-decoration: none;
   color: var(--font-darkbg);
 }
@@ -244,6 +249,7 @@ footer {
 .experience {
   color: var(--primary-color);
   background: var(--tertiary-color);
+  flex-shrink: 0;
 }
 .experience hr {
   border: 1px solid var(--primary-color);
@@ -256,7 +262,7 @@ footer {
 .date,
 .title {
   font-size: 24px;
-  white-space: nowrap;
+
   line-height: 1.5;
 }
 
@@ -282,6 +288,18 @@ footer {
   margin-bottom: 100px;
 }
 
+.experience .row {
+  padding: 20px 0;
+}
+
+.experience .row:hover {
+  background: var(--primary-color);
+  color: var(--tertiary-color);
+}
+
+.experience hr {
+  margin: 0;
+}
 /*------------About page specific code----End----------------*/
 
 .reels-page {
@@ -355,170 +373,4 @@ label {
 
 .email {
   margin-top: 80px;
-}
-
-/*------------contact page specific code--END------------------*/
-@media (max-width: 576px) {
-  .signature {
-    margin: 0px 30px;
-  }
-
-  .homepage h1 {
-    font-size: 40px;
-  }
-  .homepage h2 {
-    font-size: 20px;
-  }
-
-  .inpage-navigation a {
-    font-size: 30px;
-    line-height: 1.75;
-  }
-  .chevron {
-    bottom: 10px;
-  }
-  .chevron a {
-    font-size: 70px;
-  }
-  .reels {
-    padding-top: 50px;
-    padding-right: 8px;
-  }
-
-  /*----------ABOUT PAGE--------------*/
-  .about-page p {
-    font-size: 28px;
-  }
-
-  .date {
-    text-align: right;
-    font-size: 18px;
-  }
-  .title {
-    font-size: 22px;
-  }
-  .location {
-    font-size: 16px;
-  }
-  .date,
-  .title,
-  .location {
-    line-height: 2;
-  }
-
-  .about-page h4,
-  .title,
-  .location,
-  .date {
-    text-align: center;
-    white-space: wrap;
-    padding: 0 10px;
-  }
-
-  .about-page h4 {
-    margin-bottom: 40px;
-    font-size: 36px;
-  }
-
-  .skills ul {
-    text-align: center;
-    padding-left: 0;
-    color: var(--tertiary-color);
-  }
-  .section-title {
-    font-size: 30px;
-    text-align: center;
-  }
-  .skills hr {
-    display: none;
-  }
-  .hire-me {
-    display: none;
-  }
-}
-@media (min-width: 577px) and (max-width: 992px) {
-  .signature {
-    margin-left: 30px;
-    padding-bottom: 0;
-    max-height: 300px;
-  }
-
-  .homepage h1 {
-    font-size: 70px;
-    line-height: 1;
-  }
-  .homepage h2 {
-    font-size: 20px;
-  }
-  .margin-left {
-    display: none;
-  }
-  .inpage-navigation a {
-    font-size: 35px;
-    line-height: 1.75;
-  }
-
-  .chevron {
-    bottom: 70px;
-  }
-
-  .chevron a {
-    font-size: 80px;
-  }
-  .reels {
-    padding-top: 50px;
-    padding-right: 65px;
-    padding-left: 50px;
-  }
-
-  /*----------ABOUT PAGE--------------*/
-  .about-page p {
-    font-size: 28px;
-  }
-
-  .date {
-    text-align: right;
-    font-size: 18px;
-  }
-  .title {
-    font-size: 22px;
-  }
-  .location {
-    font-size: 16px;
-  }
-  .date,
-  .title,
-  .location {
-    line-height: 2;
-  }
-
-  .about-page h4,
-  .title,
-  .location,
-  .date {
-    text-align: center;
-    white-space: wrap;
-    padding: 0 10px;
-  }
-
-  .about-page h4 {
-    margin-bottom: 40px;
-    font-size: 36px;
-  }
-
-  .skills ul {
-    text-align: center;
-    padding-left: 0;
-    color: var(--tertiary-color);
-  }
-  .section-title {
-    font-size: 30px;
-    text-align: center;
-  }
-  .skills hr {
-    display: none;
-  }
-  .hire-me {
-    display: none;
-  }
 }

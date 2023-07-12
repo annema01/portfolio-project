@@ -1,0 +1,165 @@
+/*------------contact page specific code--END------------------*/
+@media (max-width: 576px) {
+  .signature {
+    margin: 0px 30px;
+  }
+
+  .homepage h1 {
+    font-size: 40px;
+  }
+  .homepage h2 {
+    font-size: 20px;
+  }
+
+  .inpage-navigation a {
+    font-size: 30px;
+    line-height: 1.75;
+  }
+  .chevron {
+    bottom: 10px;
+  }
+  .chevron a {
+    font-size: 70px;
+  }
+  .reels {
+    padding-top: 50px;
+    padding-right: 8px;
+  }
+
+  /*----------ABOUT PAGE--------------*/
+  .about-page p {
+    font-size: 28px;
+  }
+
+  .date {
+    text-align: right;
+    font-size: 18px;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .location {
+    font-size: 16px;
+  }
+  .date,
+  .title,
+  .location {
+    line-height: 2;
+  }
+
+  .about-page h4,
+  .title,
+  .location,
+  .date {
+    text-align: center;
+    white-space: wrap;
+    padding: 0 10px;
+  }
+
+  .about-page h4 {
+    margin-bottom: 40px;
+    font-size: 36px;
+  }
+
+  .skills ul {
+    text-align: center;
+    padding-left: 0;
+    color: var(--tertiary-color);
+  }
+  .section-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .skills hr {
+    display: none;
+  }
+  .hire-me {
+    display: none;
+  }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  .signature {
+    margin-left: 30px;
+    padding-bottom: 0;
+    max-height: 300px;
+  }
+
+  .homepage h1 {
+    font-size: 70px;
+    line-height: 1;
+  }
+  .homepage h2 {
+    font-size: 20px;
+  }
+  .margin-left {
+    display: none;
+  }
+  .inpage-navigation a {
+    font-size: 35px;
+    line-height: 1.75;
+  }
+
+  .chevron {
+    bottom: 70px;
+  }
+
+  .chevron a {
+    font-size: 80px;
+  }
+  .reels {
+    padding-top: 50px;
+    padding-right: 65px;
+    padding-left: 50px;
+  }
+
+  /*----------ABOUT PAGE--------------*/
+  .about-page p {
+    font-size: 28px;
+  }
+
+  .date {
+    text-align: right;
+    font-size: 18px;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .location {
+    font-size: 16px;
+  }
+  .date,
+  .title,
+  .location {
+    line-height: 2;
+  }
+
+  .about-page h4,
+  .title,
+  .location,
+  .date {
+    text-align: center;
+    white-space: wrap;
+    padding: 0 10px;
+  }
+
+  .about-page h4 {
+    margin-bottom: 40px;
+    font-size: 36px;
+  }
+
+  .skills ul {
+    text-align: center;
+    padding-left: 0;
+    color: var(--tertiary-color);
+  }
+  .section-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .skills hr {
+    display: none;
+  }
+  .hire-me {
+    display: none;
+  }
+}

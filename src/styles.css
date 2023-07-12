@@ -45,6 +45,7 @@ body {
   font-family: var(--primary-font);
   color: var(--font-darkbg);
   line-height: 1.5;
+  margin: 0;
 }
 
 .wrapper {
@@ -55,7 +56,7 @@ body {
 }
 /*class to dertermine the right ish alignment*/
 .content {
-  padding: 15% 1% 0 25%;
+  padding: 0 1% 0 25%;
 }
 
 .homepage .wrapper {
@@ -228,6 +229,10 @@ footer {
   background: var(--primary-color);
 }
 
+.description {
+  padding-left: 200px;
+}
+
 .about-page p a {
   color: var(--tertiary-color);
 }
@@ -365,7 +370,7 @@ label {
   font-style: italic;
 }
 
-.email i {
+.email .bi-linkedin {
   color: var(--font-darkbg);
   font-size: 33px;
   padding-right: 15px;
@@ -380,4 +385,10 @@ label {
 
 .email {
   margin-top: 80px;
+}
+
+.submit-btn {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  box-shadow: none;
 }

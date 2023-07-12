@@ -27,13 +27,13 @@
   --primary-color: #023859;
   --secondary-color: #56bfb5;
   --tertiary-color: #bf924c;
-  --gradient: linear-gradient(
+  /* --gradient: linear-gradient(
     #023859 0%,
     #1a5e73 50%,
     #297784 70%,
-    #44a2a1 100% /*,
-    #56bfb5 100%*/
-  );
+    #44a2a1 100% ,
+    #56bfb5 100%
+  );*/
   --font-darkbg: #eaeaea;
   --shadow: 2px 2px 9px 4px rgba(0, 5, 22, 0.178);
   --primary-font: "Merriweather", serif;
@@ -46,32 +46,37 @@ body {
   color: var(--font-darkbg);
   line-height: 1.5;
 }
-.homepage .wrapper {
-  border: 80px solid var(--tertiary-color);
+
+.wrapper {
   box-sizing: border-box;
   position: absolute;
   z-index: -2;
-  height: 100vh;
   width: 100%;
+}
+/*class to dertermine the right ish alignment*/
+.content {
+}
+
+.homepage .wrapper {
+  border: 80px solid var(--tertiary-color);
+  height: 100vh;
 }
 .about-page .wrapper {
   border: 80px solid var(--tertiary-color);
-  box-sizing: border-box;
-  position: absolute;
-  z-index: -2;
   width: 100%;
 }
 .reels-page .wrapper {
   border: 80px solid var(--primary-color);
-  box-sizing: border-box;
-  position: absolute;
-  z-index: -2;
-  width: 100%;
+}
+.contact-page .wrapper {
+  border: 80px solid var(--primary-color);
+  height: 100vh;
 }
 
 h1,
 h2,
-h3 {
+h3,
+.name-contact {
   text-transform: uppercase;
 }
 
@@ -79,7 +84,12 @@ h3,
 h4 {
   font-style: italic;
 }
-
+h2 {
+  font-size: 33px;
+  font-style: italic;
+  font-weight: 300;
+  font-family: var(--secondary-font);
+}
 h3 {
   font-size: 36px;
 }
@@ -176,17 +186,21 @@ footer {
   font-size: 96px;
 }
 .signature {
-  background: var(--primary-color);
   max-height: 130px;
   white-space: nowrap;
 }
-.homepage h2 {
-  font-size: 33px;
-  font-style: italic;
-  font-weight: 300;
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
+
+.signature .homepage {
   background: var(--primary-color);
+}
+
+h1,
+.contact-page {
+  color: var(--primary-color);
+}
+
+.homepage h2 {
+  color: var(--secondary-color);
 }
 
 .homepage .inpage-navigation {
@@ -301,6 +315,64 @@ footer {
   color: var(--primary-color);
 }
 /*------------Reels page specific code--END------------------*/
+/*------------contact page specific code-----------------------*/
+.contact-page {
+  background-color: var(--secondary-color);
+}
+
+.contact-page h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.contact-page h3 {
+  color: var(--tertiary-color);
+}
+
+.name-contact {
+  font-size: 45px;
+  color: var(--primary-color);
+}
+input,
+textarea {
+  height: 37px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: inset 1px 1px 4px 0px rgba(0, 5, 22, 0.25);
+  background: var(--font-darkbg);
+}
+
+textarea {
+  width: 97.5%;
+  height: 335px;
+}
+input {
+  width: 95%;
+}
+label {
+  color: var(--font-darkbg);
+  font-size: 24px;
+  font-style: italic;
+}
+
+.email i {
+  color: var(--font-darkbg);
+  font-size: 33px;
+  padding-right: 15px;
+}
+
+.email a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-style: italic;
+  font-size: 20px;
+}
+
+.email {
+  margin-top: 80px;
+}
+
+/*------------contact page specific code--END------------------*/
 @media (max-width: 576px) {
   .signature {
     margin: 0px 30px;

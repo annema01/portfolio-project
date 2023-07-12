@@ -32,7 +32,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
   </head>
-  <body class="about-page container-fluid g-0">
+  <body class="about-page">
     <div class="wrapper">
       <div id="home" class="opacity-0">home</div>
       <nav class="row navigation">
@@ -40,59 +40,46 @@
           <a href="/">Anne-Marie<br />Robert</a>
         </h1>
       </nav>
-      <div class="about-content">
-        <div class="about-description">
-          <div class="row">
-            <div class="col-lg-3 left-side"></div>
-            <div class="col-lg-9"><h3>About</h3></div>
-          </div>
-          <div class="row">
-            <div class="col-lg-3 left-side"></div>
-            <div class="col-lg-8 description">
-              <p>
-                I’m a rigging artist and animator working in Quebec, Canada.
-                I’ve worked on many projects from
-                <em>The Unstoppable Yellow Yeti, Le Facteur de l’espace</em> and
-                many others! Feel free to watch my
-                <a href="/reels.html">reels</a> or read more about my
-                <a href="#experience">experience</a> !
-              </p>
-            </div>
-          </div>
-          <!--     CHEVRON            -->
-          <div class="row">
-            <div class="chevron col-12 m0 p0 g0">
-              <a href="#inpage-navigation"
-                ><i class="bi bi-chevron-compact-down"></i
-              ></a>
-            </div>
-          </div>
-          <!--     CHEVRON - END      -->
-        </div>
 
-        <div class="row" id="inpage-navigation">
-          <div class="col-lg-8 left-side"></div>
-          <ul class="inpage-navigation col-sm-12 col-lg-3">
+      <!--proper grid-->
+      <div class="container-fluid content">
+        <section>
+          <h3>About</h3>
+          <div class="row description">
+            <p>
+              I’m a rigging artist and animator working in Quebec, Canada. I’ve
+              worked on many projects from
+              <em>The Unstoppable Yellow Yeti, Le Facteur de l’espace</em>
+              and many others! Feel free to watch my
+              <a href="/reels.html">reels</a> or read more about my
+              <a href="#experience">experience</a> !
+            </p>
+          </div>
+        </section>
+        <!--     CHEVRON            -->
+        <section class="row">
+          <div class="chevron m0 p0 g0">
+            <a href="#inpage-navigation"
+              ><i class="bi bi-chevron-compact-down"></i
+            ></a>
+          </div>
+        </section>
+
+        <!--inpage navigation section-->
+        <section class="row" id="inpage-navigation">
+          <ul class="inpage-navigation">
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
           </ul>
-        </div>
-      </div>
-      <!--SKILLS-->
-      <div class="skills" id="skills">
-        <div class="row">
-          <div class="col-lg-3 left-side"></div>
-          <div class="col-lg-8 col-md-12"><hr /></div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 left-side"></div>
-          <div class="col-lg-2"><h4>Skills</h4></div>
-          <div class="col-lg-3">
-            <div class="section-title">2D Animation</div>
-          </div>
-          <div class="col-lg-3">
-            <ul>
+        </section>
+        <!--SKILLS-->
+        <section class="skills" id="skills">
+          <hr />
+          <div class="row">
+            <h4 class="col-lg-3">Skills</h4>
+            <div class="col-lg-4 section-title">2D Animation</div>
+            <ul class="col-lg-4">
               <li>Rigging supervision</li>
               <li>Props & character rigging</li>
               <li>Rigging development</li>
@@ -101,15 +88,10 @@
               <li>Compositing</li>
             </ul>
           </div>
-        </div>
-        <div class="row sub-section">
-          <div class="col-lg-3 left-side"></div>
-          <div class="col-lg-2"><h4></h4></div>
-          <div class="col-lg-3">
-            <div class="section-title">Web Development</div>
-          </div>
-          <div class="col-lg-3">
-            <ul>
+          <div class="row sub-section">
+            <h4 class="col-lg-3">Skills</h4>
+            <div class="col-lg-4 section-title">Web Development</div>
+            <ul class="col-lg-4">
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
@@ -117,11 +99,11 @@
               <li>Bootstrap (Twitter)</li>
             </ul>
           </div>
-        </div>
+        </section>
       </div>
+      <!--container END-->
       <!--EXPERIENCE-->
-      <!--This section should use the JS inject technique learned in plus-->
-      <div class="experience" id="experience">
+      <section class="experience" id="experience">
         <!--Experience 01-->
         <div class="row">
           <div class="col-lg-3 left-side"></div>
@@ -280,7 +262,8 @@
           <div class="col-lg-5 left-side"></div>
           <div class="col-lg-6 col-md-12"><hr /></div>
         </div>
-      </div>
+      </section>
+      <!--proper grid END-->
 
       <!--EDUCATION-->
       <!--This section should use the JS inject technique learned in plus-->

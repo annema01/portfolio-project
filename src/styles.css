@@ -55,7 +55,7 @@ body {
 }
 /*class to dertermine the right ish alignment*/
 .content {
-  padding: 160px 120px 0 360px;
+  padding: 160px 160px 0 500px;
 }
 
 .homepage .wrapper {
@@ -64,7 +64,6 @@ body {
 }
 .about-page .wrapper {
   border: 80px solid var(--tertiary-color);
-  width: 100%;
 }
 .reels-page .wrapper {
   border: 80px solid var(--primary-color);
@@ -157,6 +156,8 @@ hr {
   text-decoration: none;
   font-style: italic;
   line-height: 1;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 .navigation {
   margin: 3 0px 0 150px 40px;
@@ -281,10 +282,6 @@ footer {
   margin-bottom: 100px;
 }
 
-.about-page .hire-me {
-  background-color: var(--tertiary-color);
-  color: var(--primary-color);
-}
 /*------------About page specific code----End----------------*/
 
 .reels-page {
@@ -301,10 +298,7 @@ footer {
   z-index: 2;
 }
 /*------------Reels page specific code-----------------------*/
-.reels-page .hire-me {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-}
+
 /*------------Reels page specific code--END------------------*/
 /*------------contact page specific code-----------------------*/
 .contact-page {
@@ -368,10 +362,6 @@ label {
   .signature {
     margin: 0px 30px;
   }
-  .inpage-navigation {
-    margin-right: 30px;
-    padding-right: 35px;
-  }
 
   .homepage h1 {
     font-size: 40px;
@@ -379,9 +369,7 @@ label {
   .homepage h2 {
     font-size: 20px;
   }
-  .left-side {
-    display: none;
-  }
+
   .inpage-navigation a {
     font-size: 30px;
     line-height: 1.75;
@@ -402,9 +390,6 @@ label {
     font-size: 28px;
   }
 
-  .about-content {
-    margin: 0 30px;
-  }
   .date {
     text-align: right;
     font-size: 18px;
@@ -457,9 +442,6 @@ label {
     padding-bottom: 0;
     max-height: 300px;
   }
-  .inpage-navigation {
-    padding-right: 60px;
-  }
 
   .homepage h1 {
     font-size: 70px;
@@ -488,17 +470,12 @@ label {
     padding-right: 65px;
     padding-left: 50px;
   }
-  .left-side {
-    display: none;
-  }
+
   /*----------ABOUT PAGE--------------*/
   .about-page p {
     font-size: 28px;
   }
 
-  .about-content {
-    margin: 0 30px;
-  }
   .date {
     text-align: right;
     font-size: 18px;

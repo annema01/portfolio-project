@@ -299,6 +299,11 @@ footer {
   color: var(--tertiary-color);
 }
 
+.education .row:hover {
+  background: var(--font-darkbg);
+  color: var(--primary-color);
+}
+
 .experience hr {
   margin: 0;
 }

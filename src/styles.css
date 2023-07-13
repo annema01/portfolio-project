@@ -89,6 +89,15 @@
   color: var(--font-darkbg);
 }
 
+.contact-page .nav-link:focus,
+.contact-page .nav-link:hover,
+.contact-page .navbar-nav a:-webkit-any-link:active {
+  background-color: var(--tertiary-color);
+  border-radius: 4px;
+  font-weight: normal;
+  color: var(--font-darkbg);
+}
+
 .navbar-toggler {
   color: var(--font-darkbg);
   background-color: transparent;
@@ -127,7 +136,7 @@ body {
 .about-page .wrapper {
   border-color: var(--tertiary-color);
 }
-.reels-page .wrapper {
+.projects-page .wrapper {
   border-color: var(--primary-color);
 }
 .contact-page .wrapper {
@@ -172,6 +181,7 @@ hr {
 .inpage-navigation {
   text-align: right;
   list-style: none;
+  padding-right: 20px;
 }
 .inpage-navigation a {
   color: var(--tertiary-color);
@@ -231,7 +241,6 @@ footer {
   height: 300px;
   margin: 150px 20px 0 0;
   display: flex;
-
   justify-content: space-between;
   flex-grow: 1;
   text-transform: uppercase;
@@ -256,6 +265,19 @@ footer a {
   text-decoration: none;
   color: var(--font-darkbg);
 }
+
+footer a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+
+.about-page footer a:hover {
+  text-decoration-color: var(--tertiary-color);
+}
+.projects-page a:hover {
+  text-decoration-color: var(--primary-color);
+}
+
 footer .socials {
   text-transform: lowercase;
   font-size: 15px;
@@ -298,7 +320,7 @@ footer i {
   text-transform: uppercase;
 }
 
-.homepage a {
+.homepage .inpage-navigation a {
   background: var(--primary-color);
   white-space: nowrap;
   text-align: right;
@@ -307,12 +329,16 @@ footer i {
 .homepage li {
   text-align: right;
 }
-.homepage a:hover {
+.homepage .inpage-navigation a:hover {
   text-decoration: underline;
   text-decoration-thickness: 10px;
 }
 .homepage h3 {
   color: var(--primary-color);
+}
+.socials-homepage {
+  color: var(--font-darkbg);
+  font-size: 25px;
 }
 
 /*------------Homepage specific code---End-------------------*/
@@ -397,22 +423,22 @@ footer i {
 }
 /*------------About page specific code----End----------------*/
 
-.reels-page {
+.projects-page {
   background-color: var(--tertiary-color);
 }
 
-.reels-page h4 {
+.projects-page h4 {
   color: var(--primary-color);
 }
 
-.video-reel {
+.video-project {
   margin-top: 40px;
   position: relative;
   z-index: 2;
 }
-/*------------Reels page specific code-----------------------*/
+/*------------projects page specific code-----------------------*/
 
-/*------------Reels page specific code--END------------------*/
+/*------------projects page specific code--END------------------*/
 /*------------contact page specific code-----------------------*/
 .contact-page {
   background-color: var(--secondary-color);
@@ -453,22 +479,28 @@ label {
   font-style: italic;
 }
 
-.contact-item {
-  margin: 20px 0;
+.contact-item i {
+  font-size: 21px;
 }
-
-.contact-page .bi-linkedin {
+.contact-item i,
+.link-social {
   color: var(--font-darkbg);
-  font-size: 33px;
-  /*padding: 50px 15px 50px 0;*/
 }
 
 .email {
-  text-decoration: none;
   color: var(--primary-color);
+  font-size: 20px;
+}
+
+.email,
+.contact-item a {
+  text-decoration: none;
   font-style: italic;
   font-size: 20px;
-  /*  padding: 50px 0;*/
+}
+
+.contact-page h2 {
+  color: var(--font-darkbg);
 }
 
 .submit-btn {

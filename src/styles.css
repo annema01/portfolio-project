@@ -43,6 +43,28 @@
 /*------------General code-------------------------*/
 
 /*NAVIGATION*/
+
+.navbar-expand-lg .navbar-nav .nav-link,
+.navbar-brand {
+  padding: 10px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  margin: 0 20px;
+}
+.navbar .container-fluid {
+  align-items: flex-start;
+}
+
+.navbar {
+  margin: 30px 10px 200px 40px;
+}
+
+.navbar-nav {
+  justify-content: end;
+  flex-grow: 1;
+}
+
 .navbar-brand,
 .nav-link {
   text-decoration: none;
@@ -53,26 +75,27 @@
   font-size: 20px;
 }
 
-.nav-item {
-  justify-content: end;
-  padding: 0 30px;
-}
-
 .navbar-brand {
   font-size: 38px;
 }
 
 .nav-link:focus,
 .nav-link:hover,
-a:-webkit-any-link:active {
+.navbar-nav a:-webkit-any-link:active {
   background-color: var(--secondary-color);
   border-radius: 4px;
   font-weight: normal;
   color: var(--font-darkbg);
 }
 
-.lang {
-  display: inline;
+.navbar-toggler {
+  color: var(--font-darkbg);
+  background-color: transparent;
+  border: var(--bs-border-width) solid var(--font-darkbg);
+}
+
+.nav-btn {
+  padding: 10px 0;
 }
 
 /*NAVIGATION*/
@@ -326,16 +349,6 @@ footer {
   padding: 20px 0;
 }
 
-.experience .row:hover {
-  background: var(--primary-color);
-  color: var(--tertiary-color);
-}
-
-.education .row:hover {
-  background: var(--font-darkbg);
-  color: var(--primary-color);
-}
-
 .experience hr {
   margin: 0;
 }
@@ -397,21 +410,22 @@ label {
   font-style: italic;
 }
 
-.email .bi-linkedin {
-  color: var(--font-darkbg);
-  font-size: 33px;
-  padding-right: 15px;
+.contact-item {
+  margin: 20px 0;
 }
 
-.email a {
+.contact-page .bi-linkedin {
+  color: var(--font-darkbg);
+  font-size: 33px;
+  /*padding: 50px 15px 50px 0;*/
+}
+
+.email {
   text-decoration: none;
   color: var(--primary-color);
   font-style: italic;
   font-size: 20px;
-}
-
-.email {
-  margin-top: 80px;
+  /*  padding: 50px 0;*/
 }
 
 .submit-btn {

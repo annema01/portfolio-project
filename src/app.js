@@ -22,14 +22,14 @@ educationData.forEach(function (education) {
   educationHTML =
     educationHTML +
     `
-<div class="row table-2nd-row">
+      <div class="row table-2nd-row">
         <div class="col-lg-4 date">${education.date}</div>
-                <div class="col-lg-5 title">
-                    ${education.title}<br />
-                    <div class="location">${education.location}</div>
-                </div>
-</div>
-<hr /> `;
+        <div class="col-lg-5 title">
+          ${education.title}<br />
+          <div class="location">${education.location}</div>
+         </div>
+      </div>
+      <hr /> `;
 });
 
 educationElement.innerHTML = educationHTML;
@@ -71,14 +71,14 @@ workshopData.forEach(function (workshop) {
   workshopHTML =
     workshopHTML +
     `
-<div class="row table-2nd-row">
+       <div class="row table-2nd-row">
         <div class="col-lg-4 date">${workshop.date}</div>
-                <div class="col-lg-5 title">
-                    ${workshop.title}<br />
-                    <div class="location">${workshop.location}</div>
-                </div>
-</div>
-<hr /> `;
+        <div class="col-lg-5 title">
+          ${workshop.title}<br />
+            <div class="location">${workshop.location}</div>
+           </div>
+        </div>
+        <hr /> `;
 });
 
 workshopElement.innerHTML = workshopHTML;
@@ -146,14 +146,14 @@ experienceData.forEach(function (experience) {
   experienceHTML =
     experienceHTML +
     `
-<div class="row table-2nd-row">
+     <div class="row table-2nd-row">
         <div class="col-lg-4 date">${experience.date}</div>
-                <div class="col-lg-5 title">
-                    ${experience.title}<br />
-                    <div class="location">${experience.location}</div>
-                </div>
-</div>
-<hr /> `;
+        <div class="col-lg-5 title">
+          ${experience.title}<br />
+         <div class="location">${experience.location}</div>
+        </div>
+      </div>
+    <hr /> `;
 });
 
 experienceElement.innerHTML = experienceHTML;

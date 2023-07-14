@@ -101,8 +101,8 @@ let experienceData = [
   },
   {
     title: "Rigging Supervision",
-    location: "February 21 - August 22",
-    date: "Caribara, Montreal, QC",
+    location: "Caribara, Montreal, QC",
+    date: "February 21 - August 22",
   },
   {
     title: "Rigging & 2D Animation",

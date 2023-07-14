@@ -168,6 +168,7 @@ hr {
   opacity: 1;
   margin: 0;
 }
+
 .inpage-navigation {
   text-align: right;
   list-style: none;
@@ -276,6 +277,12 @@ footer .socials {
 .footer-signature {
   font-size: 16px;
 }
+.about-page .footer-signature {
+  color: var(--tertiary-color);
+}
+.projects-page .footer-signature {
+  color: var(--primary-color);
+}
 
 footer i {
   font-size: 26px;
@@ -337,10 +344,6 @@ footer i {
   background: var(--primary-color);
 }
 
-.description {
-  padding-left: 200px;
-}
-
 .about-page p a {
   color: var(--tertiary-color);
 }
@@ -377,8 +380,12 @@ footer i {
 .date,
 .title {
   font-size: 24px;
-
   line-height: 1.5;
+}
+
+.date,
+.section-title {
+  font-style: italic;
 }
 
 .title {
@@ -423,8 +430,6 @@ footer i {
 
 .video-project {
   margin-top: 40px;
-  position: relative;
-  z-index: 2;
 }
 /*------------projects page specific code-----------------------*/
 
@@ -446,27 +451,6 @@ footer i {
 .name-contact {
   font-size: 45px;
   color: var(--primary-color);
-}
-input,
-textarea {
-  height: 37px;
-  border-radius: 4px;
-  border: none;
-  box-shadow: inset 1px 1px 4px 0px rgba(0, 5, 22, 0.25);
-  background: var(--font-darkbg);
-}
-
-textarea {
-  width: 97.5%;
-  height: 335px;
-}
-input {
-  width: 95%;
-}
-label {
-  color: var(--font-darkbg);
-  font-size: 24px;
-  font-style: italic;
 }
 
 .contact-item i {
@@ -499,27 +483,39 @@ label {
   box-shadow: none;
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
-  .content {
-    padding: 0 5% 0 5%;
+@media (min-width: 1200px) {
+  .description {
+    padding-left: 200px;
+  }
+}
+
+@media (max-width: 420px) {
+  .homepage h1 {
+    font-size: 35px;
   }
 
-  .signature {
-    margin-bottom: 110px;
+  h2 {
+    font-size: 23px;
+  }
+  .wrapper {
+    border: 30px solid;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 992px) {
+  .homepage h1 {
+    font-size: 60px;
   }
 
-  .inpage-navigation {
-    padding-right: 0px;
+  h2 {
+    font-size: 30px;
   }
   .wrapper {
     border: 40px solid;
   }
-  .homepage h1 {
-    font-size: 54px;
-  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 992px) {
   .content {
     padding: 0 5% 0 5%;
   }
@@ -530,24 +526,97 @@ label {
 
   .inpage-navigation {
     padding-right: 0px;
-    font-size: ;
   }
 
   .inpage-navigation a {
     font-size: 30px;
   }
 
-  .wrapper {
-    border: 30px solid;
-  }
-  .homepage h1 {
-    font-size: 35px;
-  }
-
-  h2 {
-    font-size: 23px;
-  }
   .navbar {
     margin: 11px 10px 100px 20px;
+  }
+
+  .hire-me {
+    display: none;
+  }
+  .navbar-brand {
+    font-size: 22px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link,
+  .navbar-brand {
+    padding: 10px 10px 10px 0;
+  }
+  p {
+    font-size: 23px;
+  }
+
+  .chevron {
+    padding-right: 0;
+  }
+
+  .skills ul {
+    font-size: 20px;
+  }
+  .section-title {
+    font-size: 20px;
+    color: var(--tertiary-color);
+    padding: 10px 0;
+  }
+  h4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .sub-section {
+    padding-top: 5px;
+  }
+  .about-description,
+  .about-page .inpage-navigation,
+  .skills,
+  .education,
+  .experience {
+    margin-bottom: 0;
+  }
+
+  .experience .title,
+  .education .title {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .experience .date,
+  .education .date {
+    font-size: 13px;
+  }
+
+  .experience .location,
+  .education .location {
+    padding-top: 5px;
+    font-size: 14px;
+  }
+
+  .scroll-up {
+    padding: 5px 10px;
+  }
+  .scroll-up i {
+    font-size: 16px;
+  }
+  footer {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    height: 150px;
+    margin: 100px 0 0 0;
+  }
+
+  footer li {
+    display: inline;
+    text-align: center;
+  }
+
+  .contact-item {
+    text-align: center;
+    font-size: 15px;
+    line-height: 2;
   }
 }

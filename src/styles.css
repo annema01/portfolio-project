@@ -498,3 +498,23 @@ label {
   color: var(--primary-color);
   box-shadow: none;
 }
+
+@media (max-width: 768px) {
+  .content {
+    padding: 0 5% 0 5%;
+  }
+
+  .signature {
+    margin-bottom: 110px;
+  }
+
+  .inpage-navigation {
+    padding-right: 0px;
+  }
+  .wrapper {
+    border: 40px solid;
+  }
+  .homepage h1 {
+    font-size: 54px;
+  }
+}

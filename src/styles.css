@@ -518,3 +518,36 @@ label {
     font-size: 54px;
   }
 }
+
+@media (max-width: 393px) {
+  .content {
+    padding: 0 5% 0 5%;
+  }
+
+  .signature {
+    margin-bottom: 70px;
+  }
+
+  .inpage-navigation {
+    padding-right: 0px;
+    font-size: ;
+  }
+
+  .inpage-navigation a {
+    font-size: 30px;
+  }
+
+  .wrapper {
+    border: 30px solid;
+  }
+  .homepage h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+  .navbar {
+    margin: 11px 10px 100px 20px;
+  }
+}

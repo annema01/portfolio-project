@@ -555,6 +555,10 @@ footer .link-social {
   footer .link-social {
     display: none;
   }
+  .credits {
+    margin: 30px 20px 20px 0;
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 541px) and (max-width: 992px) {

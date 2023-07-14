@@ -499,7 +499,7 @@ label {
   box-shadow: none;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .content {
     padding: 0 5% 0 5%;
   }
@@ -519,7 +519,7 @@ label {
   }
 }
 
-@media (max-width: 393px) {
+@media (max-width: 480px) {
   .content {
     padding: 0 5% 0 5%;
   }

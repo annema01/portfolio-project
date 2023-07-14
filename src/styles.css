@@ -295,6 +295,39 @@ footer .link-social {
   display: inline;
 }
 
+.credits {
+  margin: 0 20px 20px 0;
+  text-align: right;
+}
+.contact-page .credits,
+.homepage .credits {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.credits a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.contact-page .credits a,
+.projects-page .credits a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.credits a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--tertiary-color);
+  text-decoration-thickness: 3px;
+}
+
+.projects-page .credits a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+  text-decoration-thickness: 3px;
+}
+
 /*------------General code end---------------------*/
 /*------------Homepage specific code-------------------------*/
 
@@ -628,5 +661,9 @@ footer .link-social {
     text-align: center;
     font-size: 15px;
     line-height: 2;
+  }
+  .credits {
+    margin: 0 0 20px 0;
+    text-align: center;
   }
 }

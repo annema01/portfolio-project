@@ -342,6 +342,9 @@ footer .link-social {
   color: var(--font-darkbg);
   font-size: 25px;
 }
+.socials-homepage:hover {
+  color: var(--tertiary-color);
+}
 
 /*------------Homepage specific code---End-------------------*/
 /*------------About page specific code-----------------------*/
@@ -454,7 +457,6 @@ footer .link-social {
 }
 
 .name-contact {
-  font-size: 45px;
   color: var(--primary-color);
 }
 

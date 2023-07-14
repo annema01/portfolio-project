@@ -238,14 +238,10 @@ footer {
   margin: 150px 20px 0 0;
   display: flex;
   justify-content: space-between;
-  flex-grow: 1;
+  flex-grow: 0;
+  flex-shrink: 3;
   text-transform: uppercase;
   line-height: 2;
-}
-
-footer li {
-  display: flex;
-  align-items: flex-start;
 }
 
 .footer.nav {
@@ -293,6 +289,10 @@ footer i {
   font-size: 26px;
   padding-right: 10px;
   line-height: 1.5;
+}
+
+footer .link-social {
+  display: inline;
 }
 
 /*------------General code end---------------------*/
@@ -505,6 +505,21 @@ footer i {
   .wrapper {
     border: 30px solid;
   }
+  footer {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    height: 150px;
+    margin: 100px 0 0 0;
+  }
+
+  footer li {
+    display: inline;
+    text-align: center;
+  }
+  footer .link-social {
+    display: none;
+  }
 }
 
 @media (min-width: 541px) and (max-width: 992px) {
@@ -605,18 +620,6 @@ footer i {
   }
   .scroll-up i {
     font-size: 16px;
-  }
-  footer {
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    height: 150px;
-    margin: 100px 0 0 0;
-  }
-
-  footer li {
-    display: inline;
-    text-align: center;
   }
 
   .contact-item {

@@ -39,15 +39,15 @@
   padding: 10px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-  margin: 0 20px;
+.navbar li {
+  text-align: right;
 }
 .navbar .container-fluid {
   align-items: flex-start;
 }
 
 .navbar {
-  margin: 30px 10px 200px 40px;
+  margin: 30px 30px 200px 40px;
 }
 
 .navbar-nav {
@@ -96,6 +96,11 @@
 
 .nav-btn {
   padding: 10px 0;
+}
+
+nav .socials {
+  display: flex;
+  justify-content: end;
 }
 
 /*NAVIGATION*/
@@ -179,7 +184,7 @@ hr {
   text-decoration: none;
   font-size: 50px;
   text-decoration: none;
-  font-size: 48px;
+  font-size: 33px;
 }
 
 .chevron {
@@ -298,7 +303,7 @@ footer i {
   background-repeat: no-repeat;
 }
 .homepage h1 {
-  font-size: 96px;
+  font-size: 72px;
 }
 .signature {
   max-height: 130px;
@@ -489,7 +494,7 @@ footer i {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 540px) {
   .homepage h1 {
     font-size: 35px;
   }
@@ -502,7 +507,7 @@ footer i {
   }
 }
 
-@media (min-width: 421px) and (max-width: 992px) {
+@media (min-width: 541px) and (max-width: 992px) {
   .homepage h1 {
     font-size: 60px;
   }
